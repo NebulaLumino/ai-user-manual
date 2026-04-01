@@ -716,3 +716,43 @@
 | 2348 | Explore AI Agents in Child Safety & Educational Content Moderation | [✅] |
 | 2349 | Explore AI Agents in Fake News & Misinformation Detection | [✅] |
 | 2350 | Explore AI Agents in Exoplanet & Astrobiology Research | [✅] |
+
+### HIGH Priority — AI x Games, Puzzles, Gaming & Interactive Entertainment (2351–2370)
+
+| # | Topic | Accent | GitHub | Status |
+|---|-------|--------|--------|--------|
+| 2351 | AI Puzzle Design Generator | violet | [ai-puzzle-design](https://github.com/NebulaLumino/ai-puzzle-design) | [✅] |
+| 2352 | AI Board Game Rules Generator | blue | [ai-board-game-rules](https://github.com/NebulaLumino/ai-board-game-rules) | [✅] |
+| 2353 | AI Video Game Quest Designer | green | [ai-video-game-quest](https://github.com/NebulaLumino/ai-video-game-quest) | [✅] |
+| 2354 | AI Gaming Coach | amber | [ai-gaming-coach](https://github.com/NebulaLumino/ai-gaming-coach) | [✅] |
+| 2355 | AI TTRPG Campaign Generator | rose | [ai-ttrpg-generator](https://github.com/NebulaLumino/ai-ttrpg-generator) | [✅] |
+| 2356 | AI Sudoku Generator | teal | [ai-sudoku-generator](https://github.com/NebulaLumino/ai-sudoku-generator) | [✅] |
+| 2357 | AI Mini Golf Course Designer | cyan | [ai-minigolf-design](https://github.com/NebulaLumino/ai-minigolf-design) | [✅] |
+| 2358 | AI Chess Analyst | lime | [ai-chess-analysis](https://github.com/NebulaLumino/ai-chess-analysis) | [✅] |
+| 2359 | AI Escape Room Designer | orange | [ai-escape-room](https://github.com/NebulaLumino/ai-escape-room) | [✅] |
+| 2360 | AI Trivia Night Generator | pink | [ai-trivia-night](https://github.com/NebulaLumino/ai-trivia-night) | [✅] |
+| 2361 | AI Card Game Designer | violet | [ai-card-game-design](https://github.com/NebulaLumino/ai-card-game-design) | [✅] |
+| 2362 | AI Gaming Content Generator | emerald | [ai-gaming-content](https://github.com/NebulaLumino/ai-gaming-content) | [✅] |
+| 2363 | AI Roleplay Scenario Writer | yellow | [ai-roleplay-scenario](https://github.com/NebulaLumino/ai-roleplay-scenario) | [✅] |
+| 2364 | AI Casino Game Designer | slate | [ai-casino-game-design](https://github.com/NebulaLumino/ai-casino-game-design) | [✅] |
+| 2365 | AI Party Game Generator | indigo | [ai-party-game](https://github.com/NebulaLumino/ai-party-game) | [✅] |
+| 2366 | AI Simulation Game Designer | sky | [ai-simulation-game](https://github.com/NebulaLumino/ai-simulation-game) | [✅] |
+| 2367 | AI Gaming Accessibility Guide | zinc | [ai-gaming-accessibility](https://github.com/NebulaLumino/ai-gaming-accessibility) | [✅] |
+| 2368 | AI Speedrun Planner | neutral | [ai-speedrun-planner](https://github.com/NebulaLumino/ai-speedrun-planner) | [✅] |
+| 2369 | AI Gaming Lore Builder | fuchsia | [ai-gaming-lore](https://github.com/NebulaLumino/ai-gaming-lore) | [✅] |
+| 2370 | AI Gaming Monetization Strategist | red | [ai-gaming-monetization](https://github.com/NebulaLumino/ai-gaming-monetization) | [✅] |
+
+### MEDIUM Priority — Curiosity Docs (2371–2380)
+
+| # | Topic | Status |
+|---|-------|--------|
+| 2371 | Explore AI Agents in Open Source Software Development | [✅] |
+| 2372 | Explore AI Agents in Sports Broadcasting & Production | [✅] |
+| 2373 | Explore AI Agents in Indoor Vertical Farming & Agritech | [✅] |
+| 2374 | Explore AI Agents in Blast Analysis & Construction Safety | [✅] |
+| 2375 | Explore AI Agents in Music Production, Therapy & Sound Healing | [✅] |
+| 2376 | Explore AI Agents in Wildlife Conservation & Endangered Species | [✅] |
+| 2377 | Explore AI Agents in Cognitive Assistant for Elderly & Dementia | [✅] |
+| 2378 | Explore AI Agents in Linguistic Documentation & Preservation | [✅] |
+| 2379 | Explore AI Agents in Fungal Mycorrhizal & Biome Research | [✅] |
+| 2380 | Explore AI Agents in Future Human Evolution & Biotech Enhancement | [✅] |
