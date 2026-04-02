@@ -756,3 +756,13 @@
 | 2378 | Explore AI Agents in Linguistic Documentation & Preservation | [✅] |
 | 2379 | Explore AI Agents in Fungal Mycorrhizal & Biome Research | [✅] |
 | 2380 | Explore AI Agents in Future Human Evolution & Biotech Enhancement | [✅] |
+
+## 🚀 Cycle 80 (2397–2400)
+**Theme:** AI × Journalism, Media Ethics & Professional Communications
+
+### HIGH Priority Apps (2397–2400)
+
+| # | App | Accent | GitHub | Status |
+|---|-----|--------|--------|--------|
+| 2397 | AI Interview Question Generator & Interviewee Briefing Packer | cyan | [ai-interview-question](https://github.com/NebulaLumino/ai-interview-question) | ✅ |
+| 2400 | AI Corrections Policy & Ethics Framework Generator | violet | [ai-corrections-policy](https://github.com/NebulaLumino/ai-corrections-policy) | ✅ |
