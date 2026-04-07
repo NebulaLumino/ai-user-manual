@@ -3951,8 +3951,8 @@ After Cycle 105 complete: generate Cycle 106 tasks (3171-3200).
 ### MEDIUM Priority (3181-3190)
 | # | Status | Task | Priority |
 |---|--------|------|----------|
-| 3181 | [ ] | AI Dress Code & Capsule Work Wardrobe Generator | MEDIUM |
-| 3182 | [ ] | AI Activewear & Athleisure Capsule Generator | MEDIUM |
+| 3181 | [x] | AI Dress Code & Capsule Work Wardrobe Generator | MEDIUM |
+| 3182 | [x] | AI Activewear & Athleisure Capsule Generator | MEDIUM |
 | 3183 | [ ] | AI Seasonal Wardrobe Transition Plan Generator | MEDIUM |
 | 3184 | [ ] | AI Designer Handbag Investment & Collection Report Generator | MEDIUM |
 | 3185 | [ ] | AI Men's Grooming & Personal Care Regimen Generator | MEDIUM |
@@ -3999,8 +3999,8 @@ After Cycle 106 complete: generate Cycle 107 tasks (3201-3230).
 ### MEDIUM Priority (3181-3190)
 | # | Status | Task | Priority |
 |---|--------|------|----------|
-| 3181 | [ ] | AI Dress Code & Capsule Work Wardrobe Generator | MEDIUM |
-| 3182 | [ ] | AI Activewear & Athleisure Capsule Generator | MEDIUM |
+| 3181 | [x] | AI Dress Code & Capsule Work Wardrobe Generator | MEDIUM |
+| 3182 | [x] | AI Activewear & Athleisure Capsule Generator | MEDIUM |
 | 3183 | [ ] | AI Seasonal Wardrobe Transition Plan Generator | MEDIUM |
 | 3184 | [ ] | AI Designer Handbag Investment & Collection Report Generator | MEDIUM |
 | 3185 | [ ] | AI Men's Grooming & Personal Care Regimen Generator | MEDIUM |
