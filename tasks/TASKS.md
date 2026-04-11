@@ -4592,3 +4592,49 @@ After Cycle 116 complete: generate Cycle 117 tasks (3501-3530).
 | 3530 | [ ] | Explore AI Agents in Philanthropy, Effective Altruism & Giving Optimization | LOW |
 
 After Cycle 117 complete: generate Cycle 118 tasks (3531-3560).
+
+---
+
+After Cycle 117 complete: generate Cycle 118 tasks (3531-3560).
+
+## 🚀 Cycle 118 (3531-3560) — AI × Education, Learning & Academic Research
+
+### HIGH Priority — Education & Learning Apps (3531-3550)
+| # | Status | Task | Priority |
+|---|--------|------|----------|
+| 3531 | [ ] | AI Spaced Repetition Scheduler | HIGH |
+| 3532 | [ ] | AI Socratic Tutor & Critical Thinking Guide | HIGH |
+| 3533 | [ ] | AI Rubric Generator for Educators | HIGH |
+| 3534 | [ ] | AI Differentiated Instruction Planner | HIGH |
+| 3535 | [ ] | AI Learning Style Inventory & Adaptation Guide | HIGH |
+| 3536 | [ ] | AI Bloom's Taxonomy Lesson Sequencer | HIGH |
+| 3537 | [ ] | AI Course Syllabus Builder | HIGH |
+| 3538 | [ ] | AI Scientific Literature Reviewer | HIGH |
+| 3539 | [ ] | AI Research Hypothesis Generator | HIGH |
+| 3540 | [ ] | AI Experimental Design Assistant | HIGH |
+| 3541 | [ ] | AI Lab Protocol Optimizer | HIGH |
+| 3542 | [ ] | AI Research Data Visualization Suggester | HIGH |
+| 3543 | [ ] | AI Lab Notebook Entry Reviewer | HIGH |
+| 3544 | [ ] | AI Lab Safety Compliance Checker | HIGH |
+| 3545 | [ ] | AI Student Progress Report Generator | HIGH |
+| 3546 | [ ] | AI Thesis/Dissertation Timeline Planner | HIGH |
+| 3547 | [ ] | AI Grant Budget Builder | HIGH |
+| 3548 | [ ] | AI Peer Review Feedback Writer | HIGH |
+| 3549 | [ ] | AI Knowledge Graph Builder from Papers | HIGH |
+| 3550 | [ ] | AI Citation Formatter & Bibliography Manager | HIGH |
+
+### LOW Priority — Education Curiosity Docs (3551-3560)
+| # | Status | Task | Priority |
+|---|--------|------|----------|
+| 3551 | [ ] | Explore AI Tutoring Systems, ITS & Adaptive Learning Platforms | LOW |
+| 3552 | [ ] | Explore AI LLMs in Peer Review & Scientific Gatekeeping | LOW |
+| 3553 | [ ] | Explore AI in STEM Education, Computational Thinking & K-12 | LOW |
+| 3554 | [ ] | Explore AI Research Integrity, Plagiarism Detection & Fraud | LOW |
+| 3555 | [ ] | Explore Open Access, Preprint Servers & Scientific Publishing | LOW |
+| 3556 | [ ] | Explore AI in Lab Robotics, LIMS & High-Throughput Experimentation | LOW |
+| 3557 | [ ] | Explore Digital Badges, Micro-Credentials & the Future of Degrees | LOW |
+| 3558 | [ ] | Explore AI in MOOCs, Peer Assessment & Online Pedagogy | LOW |
+| 3559 | [ ] | Explore Scientific Figure Generation & Data Storytelling | LOW |
+| 3560 | [ ] | Explore Reproducibility Crisis, Registered Reports & Open Science | LOW |
+
+After Cycle 118 complete: generate Cycle 119 tasks (3561-3590).
