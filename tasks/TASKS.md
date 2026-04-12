@@ -4964,3 +4964,59 @@ After Cycle 123 complete: generate Cycle 124 tasks (3751-3790).
 | 3790 | [ ] | Explore AI in Food Waste, Upcycling & Circular Kitchen Design | LOW |
 
 After Cycle 124 complete: generate Cycle 125 tasks (3791-3820).
+
+---
+
+After Cycle 124 complete: generate Cycle 125 tasks (3791-3830).
+
+## 🚀 Cycle 125 (3791-3830) — AI × Travel, Tourism, Geography & Cultural Exploration
+
+### HIGH Priority — Travel & Tourism Apps (3791-3820)
+| # | Status | Task | Priority |
+|---|--------|------|----------|
+| 3791 | [ ] | AI Travel Budget Itinerary Planner | HIGH |
+| 3792 | [ ] | AI Visa Requirement Checker | HIGH |
+| 3793 | [ ] | AI Time Zone Jet Lag Optimizer | HIGH |
+| 3794 | [ ] | AI Hotel Review Sentiment Analyzer | HIGH |
+| 3795 | [ ] | AI Packing List Generator | HIGH |
+| 3796 | [ ] | AI Language Phrasebook Builder | HIGH |
+| 3797 | [ ] | AI Currency Converter & Purchasing Power Comparator | HIGH |
+| 3798 | [ ] | AI Cultural Etiquette Guide | HIGH |
+| 3799 | [ ] | AI Walking Tour Route Architect | HIGH |
+| 3800 | [ ] | AI Travel Insurance Claim Navigator | HIGH |
+| 3801 | [ ] | AI Sustainable Eco-Tourism Advisor | HIGH |
+| 3802 | [ ] | AI Train & Bus Route Optimizer (Europe/Asia) | HIGH |
+| 3803 | [ ] | AI Travel Photography Shot List | HIGH |
+| 3804 | [ ] | AI Souvenir & Duty-Free Shopping Calculator | HIGH |
+| 3805 | [ ] | AI Destination Restaurant Finder (Local Spots Only) | HIGH |
+| 3806 | [ ] | AI Immigration Officer Simulation Trainer | HIGH |
+| 3807 | [ ] | AI Remote Work Visa Country Comparator | HIGH |
+| 3808 | [ ] | AI Travel Rewards Card Optimizer | HIGH |
+| 3809 | [ ] | AI Multi-City Open-Jaw Flight Optimizer | HIGH |
+| 3810 | [ ] | AI Historical Site Context Builder | HIGH |
+| 3811 | [ ] | AI Travel Itinerary Conflict Detector | HIGH |
+| 3812 | [ ] | AI Weather Window Trip Planner | HIGH |
+| 3813 | [ ] | AI Backpacker Hostel & Guesthouse Finder | HIGH |
+| 3814 | [ ] | AI Airport Lounge Access Eligibility Checker | HIGH |
+| 3815 | [ ] | AI Travel Fear & Anxiety Planner | HIGH |
+| 3816 | [ ] | AI Gear Rental vs Checked Bag Calculator | HIGH |
+| 3817 | [ ] | AI Local Emergency Services Directory | HIGH |
+| 3818 | [ ] | AI Scenic Train Route Bucket List Builder | HIGH |
+| 3819 | [ ] | AI Travel Journal & Memory Preserver | HIGH |
+| 3820 | [ ] | AI Destination SDG Impact Estimator | HIGH |
+
+### LOW Priority — Travel Curiosity Docs (3821-3830)
+| # | Status | Task | Priority |
+|---|--------|------|----------|
+| 3821 | [ ] | Explore AI in Tourism Marketing & Destination Branding | LOW |
+| 3822 | [ ] | Explore AI in Heritage Preservation, 3D Scanning & Virtual Museums | LOW |
+| 3823 | [ ] | Explore AI in Immigration Policy, Visa Systems & Border Tech | LOW |
+| 3824 | [ ] | Explore AI in Geography: GIS, Spatial Analysis & Urban Planning | LOW |
+| 3825 | [ ] | Explore AI in Outdoor Adventure, SAR & Wildlife Safety | LOW |
+| 3826 | [ ] | Explore AI in Cultural Heritage & Language Preservation | LOW |
+| 3827 | [ ] | Explore AI in Luggage, Supply Chain & Airline Baggage Routing | LOW |
+| 3828 | [ ] | Explore AI in Air Quality & Environmental Travel | LOW |
+| 3829 | [ ] | Explore AI in Pilgrimage & Religious Tourism | LOW |
+| 3830 | [ ] | Explore AI in Cruise & Maritime Tourism | LOW |
+
+After Cycle 125 complete: generate Cycle 126 tasks (3831-3860).
