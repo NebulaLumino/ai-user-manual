@@ -4684,3 +4684,59 @@ After Cycle 118 complete: generate Cycle 119 tasks (3561-3590).
 | 3590 | [ ] | Explore Wildlife Corridors, Rewilding & Trophic Cascades | LOW |
 
 After Cycle 119 complete: generate Cycle 120 tasks (3591-3630).
+
+---
+
+After Cycle 119 complete: generate Cycle 120 tasks (3591-3630).
+
+## 🚀 Cycle 120 (3591-3630) — AI × Creative Arts, Music & Design
+
+### HIGH Priority — Creative Arts & Design Apps (3591-3620)
+| # | Status | Task | Priority |
+|---|--------|------|----------|
+| 3591 | [ ] | AI Song Melody Composer | HIGH |
+| 3592 | [ ] | AI Music Theory Chord Progression Analyzer | HIGH |
+| 3593 | [ ] | AI Album Cover Art Prompt Generator | HIGH |
+| 3594 | [ ] | AI Podcast Intro/Outro Script Writer | HIGH |
+| 3595 | [ ] | AI Brand Color Palette Generator | HIGH |
+| 3596 | [ ] | AI Typography Pairing Suggestor | HIGH |
+| 3597 | [ ] | AI Logo Concept Brief Generator | HIGH |
+| 3598 | [ ] | AI UI Component Pattern Library Builder | HIGH |
+| 3599 | [ ] | AI Storyboard Scene Description Generator | HIGH |
+| 3600 | [ ] | AI Film Shot List Generator | HIGH |
+| 3601 | [ ] | AI Haiku & Short Poetry Generator | HIGH |
+| 3602 | [ ] | AI Screenplay Format & Dialogue Polish | HIGH |
+| 3603 | [ ] | AI Video Essay Outline Builder | HIGH |
+| 3604 | [ ] | AI Fashion Mood Board Concept Builder | HIGH |
+| 3605 | [ ] | AI Interior Room Design Brief Generator | HIGH |
+| 3606 | [ ] | AI Architecture Style Transfer Advisor | HIGH |
+| 3607 | [ ] | AI Creative Brief Generator for Agencies | HIGH |
+| 3608 | [ ] | AI Comic Book Panel Layout Generator | HIGH |
+| 3609 | [ ] | AI Print Pattern Repeat Designer | HIGH |
+| 3610 | [ ] | AI Animation Style Picker for Explainers | HIGH |
+| 3611 | [ ] | AI Photography Composition Corrector | HIGH |
+| 3612 | [ ] | AI Band Merch Design Concept Generator | HIGH |
+| 3613 | [ ] | AI Museum Exhibition Narrative Builder | HIGH |
+| 3614 | [ ] | AI DJ Set Mix Breakdown Analyzer | HIGH |
+| 3615 | [ ] | AI Street Art Mural Concept Generator | HIGH |
+| 3616 | [ ] | AI Board Game Mechanic Mixer | HIGH |
+| 3617 | [ ] | AI Cocktail Recipe Generator | HIGH |
+| 3618 | [ ] | AI Tattoo Design Brief Builder | HIGH |
+| 3619 | [ ] | AI Color Palette from Image Extractor | HIGH |
+| 3620 | [ ] | AI UX Research Synthesis Report Generator | HIGH |
+
+### LOW Priority — Creative Arts Curiosity Docs (3621-3630)
+| # | Status | Task | Priority |
+|---|--------|------|----------|
+| 3621 | [ ] | Explore AI-Generated Music, Sampling & the Music Industry | LOW |
+| 3622 | [ ] | Explore Generative AI in Architecture & Parametric Design | LOW |
+| 3623 | [ ] | Explore AI in Fashion Design, Trend Forecasting & Manufacturing | LOW |
+| 3624 | [ ] | Explore AI in Film Production, Script Coverage & Editing | LOW |
+| 3625 | [ ] | Explore AI in Game Art, Procedural Worlds & NPC Dialogue | LOW |
+| 3626 | [ ] | Explore AI in Advertising, Neuromarketing & Consumer Response | LOW |
+| 3627 | [ ] | Explore AI in Interior Design, Space Planning & AR | LOW |
+| 3628 | [ ] | Explore AI in Performing Arts, Choreography & Stage | LOW |
+| 3629 | [ ] | Explore AI in Publishing, Cover Design & Interactive Books | LOW |
+| 3630 | [ ] | Explore AI in Craft Movements, Artisan Tools & Maker Economy | LOW |
+
+After Cycle 120 complete: Milestone check — all cycles through 120 done. Take stock of total tasks, repos on GitHub, and disk space. Update HEARTBEAT.md milestone record.

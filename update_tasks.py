@@ -1,156 +1,104 @@
 #!/usr/bin/env python3
-"""Update task files for Cycle 110 completion"""
-import re
-from pathlib import Path
+"""Update task files 3591-3630 to Complete status."""
+import os, re
 
-WORKSPACE = Path("/Users/nebulalumino/.openclaw/workspace")
-GITHUB_BASE = "https://github.com/NebulaLumino"
+WORKDIR = "/Users/nebulalumino/.openclaw/workspace"
+TASKS_DIR = f"{WORKDIR}/tasks"
 
-TASK_APPS = {
-    3291: "ai-sermon-generator",
-    3292: "ai-scripture-commentary",
-    3293: "ai-meditation-guide-generator",
-    3294: "ai-interfaith-dialogue",
-    3295: "ai-spiritual-retreat-planner",
-    3296: "ai-buddhist-dharma-talk",
-    3297: "ai-jewish-halakha-responsa",
-    3298: "ai-islamic-fiqh-fatwa",
-    3299: "ai-hindu-puranic-story",
-    3300: "ai-interfaith-wedding-ceremony",
-    3301: "ai-prayer-request-tracker",
-    3302: "ai-chapel-wedding-planner",
-    3303: "ai-pilgrimage-itinerary",
-    3304: "ai-ritual-crafting-guide",
-    3305: "ai-faith-nonprofit-grant",
-    3306: "ai-spiritual-assessment",
-    3307: "ai-scripture-memory-tracker",
-    3308: "ai-faith-budget-planner",
-    3309: "ai-youth-group-activity",
-    3310: "ai-church-health-report",
+# Apps 3591-3620: GitHub repos confirmed pushed
+APPS = {
+    3591: "https://github.com/NebulaLumino/ai-melody-composer",
+    3592: "https://github.com/NebulaLumino/ai-chord-progression",
+    3593: "https://github.com/NebulaLumino/ai-album-cover",
+    3594: "https://github.com/NebulaLumino/ai-podcast-script",
+    3595: "https://github.com/NebulaLumino/ai-brand-colors",
+    3596: "https://github.com/NebulaLumino/ai-typography",
+    3597: "https://github.com/NebulaLumino/ai-logo-brief",
+    3598: "https://github.com/NebulaLumino/ai-ui-patterns",
+    3599: "https://github.com/NebulaLumino/ai-storyboard",
+    3600: "https://github.com/NebulaLumino/ai-shot-list",
+    3601: "https://github.com/NebulaLumino/ai-haiku-generator",
+    3602: "https://github.com/NebulaLumino/ai-screenplay",
+    3603: "https://github.com/NebulaLumino/ai-video-essay",
+    3604: "https://github.com/NebulaLumino/ai-fashion-mood",
+    3605: "https://github.com/NebulaLumino/ai-interior-design",
+    3606: "https://github.com/NebulaLumino/ai-architecture-style",
+    3607: "https://github.com/NebulaLumino/ai-creative-brief",
+    3608: "https://github.com/NebulaLumino/ai-comic-panels",
+    3609: "https://github.com/NebulaLumino/ai-print-pattern",
+    3610: "https://github.com/NebulaLumino/ai-animation-style",
+    3611: "https://github.com/NebulaLumino/ai-photo-composition",
+    3612: "https://github.com/NebulaLumino/ai-band-merch",
+    3613: "https://github.com/NebulaLumino/ai-museum-narrative",
+    3614: "https://github.com/NebulaLumino/ai-dj-mix",
+    3615: "https://github.com/NebulaLumino/ai-street-art",
+    3616: "https://github.com/NebulaLumino/ai-boardgame-mechanics",
+    3617: "https://github.com/NebulaLumino/ai-cocktail-gen",
+    3618: "https://github.com/NebulaLumino/ai-tattoo-brief",
+    3619: "https://github.com/NebulaLumino/ai-image-palette",
+    3620: "https://github.com/NebulaLumino/ai-ux-research",
 }
 
-TASK_DOCS = {
-    3311: "Faith-Based Crisis Counseling & Pastoral Care AI",
-    3312: "Sacred Text Translation & Preservation AI",
-    3313: "Interfaith Theological Debate AI",
-    3314: "Pilgrimage Route Planning & Sacred Site AI",
-    3315: "Funerary Rites AI",
-    3316: "Religious Education Curriculum Generation AI",
-    3317: "Sacred Music Composition & Hymn Generation AI",
-    3318: "Sacred Architecture AI",
-    3319: "Charitable Giving / Zakat Optimization AI",
-    3320: "Religious Dietary Law Compliance AI (Kosher/Halal)",
+# Doc tasks 3621-3630
+DOCS = {
+    3621: "docs/task-3621-ai-generated-music-sampling-music-industry.md",
+    3622: "docs/task-3622-generative-ai-architecture-parametric-design.md",
+    3623: "docs/task-3623-ai-fashion-design-trend-forecasting.md",
+    3624: "docs/task-3624-ai-film-production-script-coverage-editing.md",
+    3625: "docs/task-3625-ai-game-art-procedural-worlds-npc.md",
+    3626: "docs/task-3626-ai-advertising-neuromarketing-subconscious.md",
+    3627: "docs/task-3627-ai-interior-design-ar-furniture.md",
+    3628: "docs/task-3628-ai-performing-arts-choreography-stage.md",
+    3629: "docs/task-3629-ai-publishing-cover-design-interactive-books.md",
+    3630: "docs/task-3630-ai-craft-movements-artisan-maker-economy.md",
 }
 
-def update_task_file(task_num, github_url=None):
-    task_file = WORKSPACE / "tasks" / f"task-{task_num}.md"
-    if not task_file.exists():
-        print(f"  [MISSING] {task_file}")
-        return False
-    
-    content = task_file.read_text()
-    
+def update_app_task(task_num, repo_url):
+    filepath = f"{TASKS_DIR}/task-{task_num}.md"
+    if not os.path.exists(filepath):
+        print(f"  MISSING: {filepath}")
+        return
+    with open(filepath) as f:
+        content = f.read()
     # Update status
-    content = re.sub(r'\*\*Status:\*\*.*', f'**Status:** ✅ Complete', content)
-    
-    # Add GitHub URL if provided
-    if github_url:
-        if "**GitHub:**" in content:
-            content = re.sub(r'\*\*GitHub:\*\*.*', f'**GitHub:** {github_url}', content)
-        else:
-            # Find the last line and append
-            content = content.rstrip() + f"\n- **GitHub:** {github_url}\n"
-    
-    # Add completion entry
-    if "**Completed:**" not in content:
-        content = content.rstrip() + f"\n- **Completed:** 2026-04-11\n"
-    
-    task_file.write_text(content)
-    return True
+    content = re.sub(r'## Status:.*', '## Status: ✅ Complete', content)
+    # Update GitHub URL
+    content = re.sub(r'## GitHub Repo:.*', f'## GitHub Repo: {repo_url}', content)
+    # Update progress checkboxes
+    content = content.replace('- [ ] Scaffold', '- [x] Scaffold')
+    content = content.replace('- [ ] Implement', '- [x] Implement')
+    content = content.replace('- [ ] Build', '- [x] Build')
+    content = content.replace('- [ ] GitHub push', '- [x] GitHub push')
+    content = content.replace('- [ ] Cleanup', '- [x] Cleanup')
+    with open(filepath, 'w') as f:
+        f.write(content)
+    print(f"  Updated task-{task_num}")
 
-print("Updating HIGH priority app task files (3291-3300)...")
-for task_num, app_name in TASK_APPS.items():
-    url = f"{GITHUB_BASE}/{app_name}"
-    result = update_task_file(task_num, url)
-    if result:
-        print(f"  ✅ {task_num}: {app_name}")
+def update_doc_task(task_num, doc_path):
+    filepath = f"{TASKS_DIR}/task-{task_num}.md"
+    if not os.path.exists(filepath):
+        print(f"  MISSING: {filepath}")
+        return
+    with open(filepath) as f:
+        content = f.read()
+    # Update status
+    content = re.sub(r'## Status:.*', '## Status: ✅ Complete', content)
+    # Update path if present
+    if doc_path:
+        content = re.sub(r'## Doc Path:.*', f'## Doc Path: {doc_path}', content)
+    # Update progress
+    content = content.replace('- [ ] Write', '- [x] Write')
+    content = content.replace('- [ ] Review', '- [x] Review')
+    with open(filepath, 'w') as f:
+        f.write(content)
+    print(f"  Updated task-{task_num}")
 
-print("\nUpdating LOW priority doc task files (3311-3320)...")
-for task_num, doc_title in TASK_DOCS.items():
-    result = update_task_file(task_num)
-    if result:
-        print(f"  ✅ {task_num}: {doc_title}")
+print("Updating app tasks 3591-3620...")
+for task_num in range(3591, 3621):
+    update_app_task(task_num, APPS.get(task_num, ""))
 
-# Update TASKS.md
-print("\nUpdating TASKS.md...")
-tasks_md = WORKSPACE / "TASKS.md"
-if tasks_md.exists():
-    content = tasks_md.read_text()
-    for task_num in list(TASK_APPS.keys()) + list(TASK_DOCS.keys()):
-        # Mark as complete in TASKS.md
-        pattern = rf'(\d{{4}})\.\s+\[([ x])\]'
-        def replacer(m):
-            num = int(m.group(1))
-            if num == task_num:
-                return m.group(1) + ". [x]"
-            return m.group(0)
-        content = re.sub(pattern, replacer, content)
-    tasks_md.write_text(content)
-    print("  ✅ TASKS.md updated")
-else:
-    print("  ⚠️ TASKS.md not found")
+print("\nUpdating doc tasks 3621-3630...")
+for task_num in range(3621, 3631):
+    update_doc_task(task_num, DOCS.get(task_num, ""))
 
-# Update HEARTBEAT.md
-print("\nUpdating HEARTBEAT.md...")
-heartbeat_md = WORKSPACE / "HEARTBEAT.md"
-completion_entry = """## Cycle 110 Complete — 2026-04-11
-
-### AI × Religion, Spirituality, Theology & Faith-Based Organizations
-
-**HIGH Priority Apps (3291-3300):** ✅ All 10 apps built, deployed to GitHub
-- 3291: ai-sermon-generator (Red)
-- 3292: ai-scripture-commentary (Orange)
-- 3293: ai-meditation-guide-generator (Yellow)
-- 3294: ai-interfaith-dialogue (Lime)
-- 3295: ai-spiritual-retreat-planner (Green)
-- 3296: ai-buddhist-dharma-talk (Teal)
-- 3297: ai-jewish-halakha-responsa (Cyan)
-- 3298: ai-islamic-fiqh-fatwa (Blue)
-- 3299: ai-hindu-puranic-story (Indigo)
-- 3300: ai-interfaith-wedding-ceremony (Violet)
-
-**MEDIUM Priority Apps (3301-3310):** ✅ All 10 apps built, deployed to GitHub
-- 3301: ai-prayer-request-tracker (Pink)
-- 3302: ai-chapel-wedding-planner (Rose)
-- 3303: ai-pilgrimage-itinerary (Orange)
-- 3304: ai-ritual-crafting-guide (Yellow)
-- 3305: ai-faith-nonprofit-grant (Lime)
-- 3306: ai-spiritual-assessment (Green)
-- 3307: ai-scripture-memory-tracker (Cyan)
-- 3308: ai-faith-budget-planner (Blue)
-- 3309: ai-youth-group-activity (Indigo)
-- 3310: ai-church-health-report (Violet)
-
-**LOW Priority Docs (3311-3320):** ✅ All 10 curiosity docs written
-- 3311: Faith-Based Crisis Counseling & Pastoral Care AI
-- 3312: Sacred Text Translation & Preservation AI
-- 3313: Interfaith Theological Debate AI
-- 3314: Pilgrimage Route Planning & Sacred Site AI
-- 3315: Funerary Rites AI
-- 3316: Religious Education Curriculum Generation AI
-- 3317: Sacred Music Composition & Hymn Generation AI
-- 3318: Sacred Architecture AI
-- 3319: Charitable Giving / Zakat Optimization AI
-- 3320: Religious Dietary Law Compliance AI (Kosher/Halal)
-
-**GitHub:** All 20 apps pushed to NebulaLumino GitHub org
-"""
-if heartbeat_md.exists():
-    existing = heartbeat_md.read_text()
-    heartbeat_md.write_text(existing + "\n" + completion_entry)
-    print("  ✅ HEARTBEAT.md appended")
-else:
-    heartbeat_md.write_text(completion_entry)
-    print("  ✅ HEARTBEAT.md created")
-
-print("\n✅ All task files updated!")
+print("\nDone!")
