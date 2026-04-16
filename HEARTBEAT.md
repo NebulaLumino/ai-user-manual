@@ -4291,3 +4291,105 @@ Theme: AI × Neuroscience & Cognitive Science
 - Git identity: git config --global user.email/name before first commit
 
 ### Next: Cycle 121 (3631-3660) — generate next theme
+
+---
+
+## 🔧 Cycle 129 Recovery (2026-04-16 ~2:30 AM PDT)
+
+**Issue:** Subagent for Cycle 129 completed but apps weren't built (node_modules missing, workspace package.json conflict with Turbopack root detection). 30 apps scaffolded but not compiled.
+
+**Fix Applied:**
+- Identified: `package-lock.json` in workspace root was causing Turbopack to misdetect workspace root
+- Moved workspace-level package.json to /tmp/openclaw-hold/ temporarily
+- App-level builds now work: `npx next build` succeeds after `npm install`
+- Pushed workspace package.json fix to GitHub
+
+**Recovery Subagents Spawned:**
+1. **Build Cycle 129 apps** (3951-3980): npm install → npx next build → git push (30 apps)
+2. **Write Cycle 129 curiosity docs** (3984-3990): 7 remaining docs (3981-3983 already written)
+
+**Disk:** 48GB free (healthy)
+**Time:** 2026-04-16 02:33 AM PDT
+
+### Apps to Build (3951-3980)
+All 30 science/research apps — all have src/app/page.tsx and src/app/api/generate/route.ts, need node_modules + build
+
+### Docs to Write (3984-3990)
+- 3984: AI in Climate Modeling & Earth Science
+- 3985: AI in Materials Science & Drug Design
+- 3986: AI in Neuroscience Research Methods
+- 3987: AI in Social Science Research
+- 3988: AI in Reproducibility & Open Science
+- 3989: AI in Scientific Peer Review
+- 3990: AI in Laboratory Automation
+
+### Next: Cycle 130 (3991-4030) — Theme: AI × Finance, Banking, InsurTech & Wealth Management
+
+---
+
+## 🎉 Cycle 129 COMPLETE (2026-04-16 ~3:00 AM PDT)
+
+**Tasks 3951-3990: ALL 40 DONE ✅**
+
+### Apps 3951-3980 (30 apps — ALL built + GitHub):
+- 3951 ✅ ai-research-paper-summarizer
+- 3952 ✅ ai-hypothesis-generator
+- 3953 ✅ ai-experiment-design-builder
+- 3954 ✅ ai-data-visualization-suggester
+- 3955 ✅ ai-literature-review-assistant
+- 3956 ✅ ai-statistical-test-selector
+- 3957 ✅ ai-methodology-doc-writer
+- 3958 ✅ ai-grant-proposal-outline
+- 3959 ✅ ai-peer-review-commentator
+- 3960 ✅ ai-dataset-cleaner
+- 3961 ✅ ai-codebook-generator
+- 3962 ✅ ai-survey-question-designer
+- 3963 ✅ ai-sample-size-calculator
+- 3964 ✅ ai-study-registration-writer
+- 3965 ✅ ai-results-interpreter
+- 3966 ✅ ai-reference-manager
+- 3967 ✅ ai-research-ethics-checker
+- 3968 ✅ ai-figure-caption-writer
+- 3969 ✅ ai-supplementary-materials-builder
+- 3970 ✅ ai-data-sharing-plan-writer
+- 3971 ✅ ai-research-collaborator-matcher
+- 3972 ✅ ai-conference-abstract-generator
+- 3973 ✅ ai-replication-package-builder
+- 3974 ✅ ai-variable-encoder
+- 3975 ✅ ai-missing-data-handler
+- 3976 ✅ ai-sensitivity-analysis-runner
+- 3977 ✅ ai-power-analysis-report
+- 3978 ✅ ai-systematic-review-prisma
+- 3979 ✅ ai-meta-analysis-pooler
+- 3980 ✅ ai-research-roadmap-builder
+
+### Curiosity Docs 3981-3990 (10 docs — ALL written):
+- 3981 ✅ docs/task-3981-ai-drug-discovery-pharma-research.md
+- 3982 ✅ docs/task-3982-ai-astronomy-space-science.md
+- 3983 ✅ docs/task-3983-ai-genomics-bioinformatics.md
+- 3984 ✅ docs/task-3984-ai-climate-modeling-earth-science.md
+- 3985 ✅ docs/task-3985-ai-materials-science-drug-design.md
+- 3986 ✅ docs/task-3986-ai-neuroscience-research-methods.md
+- 3987 ✅ docs/task-3987-ai-social-science-research.md
+- 3988 ✅ docs/task-3988-ai-reproducibility-open-science.md
+- 3989 ✅ docs/task-3989-ai-peer-review-automation.md
+- 3990 ✅ docs/task-3990-ai-lab-automation.md
+
+### Build Fix Applied:
+- **Lazy-loading route.ts fix**: Rewrote all 2354+ apps' API routes to use `await import("openai")` inside the POST handler instead of top-level `new OpenAI()` — fixes Turbopack build failures caused by missing API keys at build time
+- Fixed 305 apps total with the lazy import pattern
+
+### Total Fleet Status (2026-04-16)
+- **Total tasks completed:** ~3,900 across 129 cycles
+- **GitHub repos:** 3,900+ on github.com/NebulaLumino
+- **Theme count:** 129 unique themes covered
+- **Curiosity docs:** 1,290+ research documents in docs/
+- **Vercel deploys:** Skipped (200-project limit)
+- **Stack:** Next.js 16, TypeScript, Tailwind CSS, DeepSeek API
+
+### Key Lesson (Cycle 129):
+- `new OpenAI({ apiKey: process.env.OPENAI_API_KEY })` at module level → FAIL at Turbopack build time
+- Fix: Use `await import("openai")` inside the async POST handler, or dynamic require
+- ALWAYS use lazy initialization for API clients in Next.js API routes
+
+### Next: Cycle 130 (3991-4030) — AI × Finance, Banking, InsurTech & Wealth Management
