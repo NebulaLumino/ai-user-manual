@@ -1753,3 +1753,69 @@
 | 4068 | AI Agents in Academic Publishing | docs/task-4068-ai-agents-academic-publishing.md | ✅ |
 | 4069 | AI Agents in Spaced Repetition | docs/task-4069-ai-agents-study-spaced-repetition.md | ✅ |
 | 4070 | AI Agents in STEM Education | docs/task-4070-ai-agents-stem-education.md | ✅ |
+
+---
+
+## 🚀 Cycle 132 (4071-4110)
+**Theme:** AI × Media, Entertainment, Sports & Gaming
+
+---
+
+### HIGH Priority Apps (4071–4085) — rose (4071-4075) + cyan (4076-4080) + violet (4081-4085)
+
+| # | App | Task File | Status |
+|---|-----|-----------|--------|
+| 4071 | AI Video Script Generator | tasks/task-4071-ai-video-script-generator.md | 🆕 |
+| 4072 | AI Podcast Show Notes | tasks/task-4072-ai-podcast-show-notes.md | 🆕 |
+| 4073 | AI Movie Review Writer | tasks/task-4073-ai-movie-review-writer.md | 🆕 |
+| 4074 | AI Song Lyrics Analyzer | tasks/task-4074-ai-song-lyrics-analyzer.md | 🆕 |
+| 4075 | AI Gaming Achievement Tracker | tasks/task-4075-ai-gaming-achievement-tracker.md | 🆕 |
+| 4076 | AI Streaming Content Planner | tasks/task-4076-ai-streaming-content-planner.md | 🆕 |
+| 4077 | AI Esports Match Analyst | tasks/task-4077-ai-esports-match-analyst.md | 🆕 |
+| 4078 | AI Sports Highlight Compiler | tasks/task-4078-ai-sports-highlight-compiler.md | 🆕 |
+| 4079 | AI Fantasy League Advisor | tasks/task-4079-ai-fantasy-league-advisor.md | 🆕 |
+| 4080 | AI Sports Broadcast Writer | tasks/task-4080-ai-sports-broadcast-writer.md | 🆕 |
+| 4081 | AI Game Narrative Builder | tasks/task-4081-ai-game-narrative-builder.md | 🆕 |
+| 4082 | AI Board Game Rule Writer | tasks/task-4082-ai-board-game-rule-writer.md | 🆕 |
+| 4083 | AI Video Game Reviewer | tasks/task-4083-ai-video-game-reviewer.md | 🆕 |
+| 4084 | AI Tournament Bracket Predictor | tasks/task-4084-ai-tournament-bracket-predictor.md | 🆕 |
+| 4085 | AI Esports Team Composition Advisor | tasks/task-4085-ai-esports-team-composition-advisor.md | 🆕 |
+
+---
+
+### MEDIUM Priority Apps (4086–4100) — amber (4086-4090) + emerald (4091-4095) + indigo (4096-4100)
+
+| # | App | Task File | Status |
+|---|-----|-----------|--------|
+| 4086 | AI Sports Injury Analyst | tasks/task-4086-ai-sports-injury-analyst.md | 🆕 |
+| 4087 | AI Game Difficulty Calibrator | tasks/task-4087-ai-game-difficulty-calibrator.md | 🆕 |
+| 4088 | AI Sports Trade Value Calculator | tasks/task-4088-ai-sports-trade-value-calculator.md | 🆕 |
+| 4089 | AI Music Playlist Curator | tasks/task-4089-ai-music-playlist-curator.md | 🆕 |
+| 4090 | AI Comic Book Script Writer | tasks/task-4090-ai-comic-book-script-writer.md | 🆕 |
+| 4091 | AI Social Media Content Rewriter | tasks/task-4091-ai-social-media-content-rewriter.md | 🆕 |
+| 4092 | AI Movie Screenplay Dialogue | tasks/task-4092-ai-movie-screenplay-dialogue.md | 🆕 |
+| 4093 | AI TV Episode Synopsis Writer | tasks/task-4093-ai-tv-episode-synopsis-writer.md | 🆕 |
+| 4094 | AI Radio Podcast Intro Generator | tasks/task-4094-ai-radio-podcast-intro-generator.md | 🆕 |
+| 4095 | AI Book Chapter Outline Builder | tasks/task-4095-ai-book-chapter-outline-builder.md | 🆕 |
+| 4096 | AI Creative Writing Prompts | tasks/task-4096-ai-creative-writing-prompts.md | 🆕 |
+| 4097 | AI Character Backstory Generator | tasks/task-4097-ai-character-backstory-generator.md | 🆕 |
+| 4098 | AI Dialogue Writer | tasks/task-4098-ai-dialogue-writer.md | 🆕 |
+| 4099 | AI World Building Assistant | tasks/task-4099-ai-world-building-assistant.md | 🆕 |
+| 4100 | AI Editorial Cartoon Idea | tasks/task-4100-ai-editorial-cartoon-idea.md | 🆕 |
+
+---
+
+### LOW Priority — Curiosity Docs (4101–4110)
+
+| # | Topic | Task File | Status |
+|---|-------|-----------|--------|
+| 4101 | AI Agents in Media Production & Content Creation | tasks/task-4101-curiosity.md | 🆕 |
+| 4102 | AI Agents in Streaming & Entertainment Platforms | tasks/task-4102-curiosity.md | 🆕 |
+| 4103 | AI Agents in Sports Analytics & Performance | tasks/task-4103-curiosity.md | 🆕 |
+| 4104 | AI Agents in Gaming & Interactive Entertainment | tasks/task-4104-curiosity.md | 🆕 |
+| 4105 | AI Agents in Music Composition & Audio | tasks/task-4105-curiosity.md | 🆕 |
+| 4106 | AI Agents in Film & Television Production | tasks/task-4106-curiosity.md | 🆕 |
+| 4107 | AI Agents in Esports & Competitive Gaming | tasks/task-4107-curiosity.md | 🆕 |
+| 4108 | AI Agents in Social Media & Creator Economy | tasks/task-4108-curiosity.md | 🆕 |
+| 4109 | AI Agents in Publishing & Long-form Content | tasks/task-4109-curiosity.md | 🆕 |
+| 4110 | AI Agents in Advertising & Creative Marketing | tasks/task-4110-curiosity.md | 🆕 |
