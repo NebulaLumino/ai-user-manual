@@ -5115,3 +5115,61 @@ After Cycle 126 complete: generate Cycle 127 tasks (3871-3900).
 ## 🚀 Cycle 136 (4221-4260) — awaiting spawn
 
 After Cycle 135 complete: generate Cycle 136 tasks.
+
+---
+
+## 🚀 Cycle 136 — AI × Music, Audio Production, Podcasting & Sound Design (4221-4260) 🎵
+
+### 🎯 Theme Description
+AI-powered tools for music creation, audio production, podcasting, sound design, and sonic experiences — from songwriting to mixing, podcast production to sound effects.
+
+| # | Status | Task |
+|---|--------|------|
+| 4221-4250 | 🔄 | 30 Music/Audio/Podcasting AI apps (see task files) |
+| 4251-4260 | 🔄 | 10 curiosity docs (see task files) |
+
+### App List (4221-4250)
+TASK: ai-podcast-show-notes-generator
+TASK: ai-song-lyrics-generator
+TASK: ai-music-composer
+TASK: ai-dj-mix-generator
+TASK: ai-sound-effect-generator
+TASK: ai-podcast-script-writer
+TASK: ai-album-cover-generator
+TASK: ai-audiobook-narrator
+TASK: ai-vocal-remover
+TASK: ai-drum-pattern-generator
+TASK: ai-chord-progression-generator
+TASK: ai-music-transcription
+TASK: ai-podcast-guest-matchmaker
+TASK: ai-mixing-mastering-assistant
+TASK: ai-music-theory-tutor
+TASK: ai-podcast-clip-generator
+TASK: ai-synth-patch-designer
+TASK: ai-music-sample-finder
+TASK: ai-vocal-harmonizer
+TASK: ai-podcast-intro-outro
+TASK: ai-music-genre-transfer
+TASK: ai-soundscape-generator
+TASK: ai-beat-maker
+TASK: ai-music-playlist-curator
+TASK: ai-podcast-show-notes-advanced
+TASK: ai-music-mood-analyzer
+TASK: ai-lyrics-explainer
+TASK: ai-audio-editing-cutter
+TASK: ai-music-bpm-tapper
+TASK: ai-podcast-rss-analyzer
+
+### Curiosity Docs (4251-4260)
+DOC: 4251: AI in Music Production — From MIDI Controllers to AI Composers
+DOC: 4252: Text-to-Speech vs Neural Voice Cloning — The Podcasting Revolution
+DOC: 4253: AI in Sound Design — Procedural Audio and Game Soundscapes
+DOC: 4254: Semantic Audio Separation — Isolating Instruments from Mixed Audio
+DOC: 4255: AI Mastering — LUFS, Loudness War, and Automated Mastering
+DOC: 4256: Generative Music — Algorithmic Composition and Infinite Playlists
+DOC: 4257: Voice Synthesis — From Wavenform to Real-Time Voice Conversion
+DOC: 4258: Podcast Economics — Sponsorships, Listener Behavior, and Growth
+DOC: 4259: Spatial Audio — Dolby Atmos, Ambisonics, and AI Binaural Rendering
+DOC: 4260: Music Copyright in the AI Era — Training Data and Fair Use
+
+### GitHub repos: ALL TO BE CREATED (gh repo create)
