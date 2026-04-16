@@ -1,29 +1,31 @@
-import OpenAI from "openai";
+import { NextRequest, NextResponse } from 'next/server';
 
-const client = new OpenAI({
-  baseURL: "https://api.deepseek.com/v1",
-  apiKey: process.env.OPENAI_API_KEY,
-});
+// Lazy-loaded OpenAI client to avoid build-time credential checks
+let _clientPromise: Promise<any> | null = null;
 
-export async function POST(req: Request) {
+async function getClient() {
+  if (!_clientPromise) {
+    _clientPromise = (async () => {
+      const { default: OpenAI } = await import('openai');
+      return new OpenAI({
+        apiKey: process.env.OPENAI_API_KEY,
+        baseURL: 'https://api.deepseek.com/v1',
+      });
+    })();
+  }
+  return _clientPromise;
+}
+
+export async function POST(req: NextRequest) {
   try {
     const { prompt } = await req.json();
+    const client = await getClient();
     const completion = await client.chat.completions.create({
-      model: "deepseek-chat",
-      messages: [
-        {
-          role: "system",
-          content: `You are a world-class culinary AI with expertise in recipes, meal planning, nutrition, and cooking techniques. Generate comprehensive, delicious, and practical recipes with exact measurements, clear instructions, and helpful tips. Format your response with proper markdown headers, bullet points, and sections. Include nutritional information when relevant.`,
-        },
-        { role: "user", content: prompt },
-      ],
-      temperature: 0.8,
-      max_tokens: 2000,
+      model: 'deepseek-chat',
+      messages: [{ role: 'user', content: prompt }],
     });
-
-    return Response.json({ result: completion.choices[0].message.content });
-  } catch (error: unknown) {
-    const message = error instanceof Error ? error.message : "Unknown error";
-    return Response.json({ error: message }, { status: 500 });
+    return NextResponse.json({ result: completion.choices[0].message.content });
+  } catch (err: any) {
+    return NextResponse.json({ error: err.message }, { status: 500 });
   }
 }

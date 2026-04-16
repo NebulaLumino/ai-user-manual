@@ -15,7 +15,7 @@ export async function POST(req: NextRequest) {
       baseURL: "https://api.deepseek.com/v1",
     });
 
-    const completion = await openai.chat.completions.create({
+    const completion = await getClient().chat.completions.create({
       model: "deepseek-chat",
       messages: [
         { role: "system", content: systemPrompt },

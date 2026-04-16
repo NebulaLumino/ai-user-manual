@@ -1,32 +1,31 @@
-import { NextRequest, NextResponse } from "next/server";
-import OpenAI from "openai";
+import { NextRequest, NextResponse } from 'next/server';
 
-const client = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY,
-  baseURL: "https://api.deepseek.com/v1",
-});
+// Lazy-loaded OpenAI client to avoid build-time credential checks
+let _clientPromise: Promise<any> | null = null;
+
+async function getClient() {
+  if (!_clientPromise) {
+    _clientPromise = (async () => {
+      const { default: OpenAI } = await import('openai');
+      return new OpenAI({
+        apiKey: process.env.OPENAI_API_KEY,
+        baseURL: 'https://api.deepseek.com/v1',
+      });
+    })();
+  }
+  return _clientPromise;
+}
 
 export async function POST(req: NextRequest) {
   try {
-    const { input } = await req.json();
-    if (!input?.trim()) {
-      return NextResponse.json({ error: "Input required." }, { status: 400 });
-    }
-
+    const { prompt } = await req.json();
+    const client = await getClient();
     const completion = await client.chat.completions.create({
-      model: "deepseek-chat",
-      messages: [
-        { role: "system", content: " + repr(system_prompt) + " },
-        { role: "user", content: input },
-      ],
-      max_tokens: 1200,
-      temperature: 0.7,
+      model: 'deepseek-chat',
+      messages: [{ role: 'user', content: prompt }],
     });
-
-    const output = completion.choices[0]?.message?.content || "No response generated.";
-    return NextResponse.json({ output });
-  } catch (err: unknown) {
-    const message = err instanceof Error ? err.message : "Unknown error";
-    return NextResponse.json({ error: message }, { status: 500 });
+    return NextResponse.json({ result: completion.choices[0].message.content });
+  } catch (err: any) {
+    return NextResponse.json({ error: err.message }, { status: 500 });
   }
 }

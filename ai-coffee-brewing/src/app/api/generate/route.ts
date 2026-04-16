@@ -1,19 +1,31 @@
-import OpenAI from "openai";
-export async function POST(req: Request) {
-  const { input } = await req.json();
-  if (!input) return new Response("No input", { status: 400 });
-  const openai = new OpenAI({
-    apiKey: process.env.OPENAI_API_KEY,
-    baseURL: "https://api.deepseek.com/v1",
-  });
-  const completion = await openai.chat.completions.create({
-    model: "deepseek-chat",
-    messages: [
-      { role: "system", content: "You are a specialty coffee expert. Calculate extraction parameters for pour-over, French press, espresso, AeroPress, and cold brew with precise ratios." },
-      { role: "user", content: input },
-    ],
-    temperature: 0.8,
-    max_tokens: 800,
-  });
-  return Response.json({ result: completion.choices[0].message.content });
+import { NextRequest, NextResponse } from 'next/server';
+
+// Lazy-loaded OpenAI client to avoid build-time credential checks
+let _clientPromise: Promise<any> | null = null;
+
+async function getClient() {
+  if (!_clientPromise) {
+    _clientPromise = (async () => {
+      const { default: OpenAI } = await import('openai');
+      return new OpenAI({
+        apiKey: process.env.OPENAI_API_KEY,
+        baseURL: 'https://api.deepseek.com/v1',
+      });
+    })();
+  }
+  return _clientPromise;
+}
+
+export async function POST(req: NextRequest) {
+  try {
+    const { prompt } = await req.json();
+    const client = await getClient();
+    const completion = await client.chat.completions.create({
+      model: 'deepseek-chat',
+      messages: [{ role: 'user', content: prompt }],
+    });
+    return NextResponse.json({ result: completion.choices[0].message.content });
+  } catch (err: any) {
+    return NextResponse.json({ error: err.message }, { status: 500 });
+  }
 }
